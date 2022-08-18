@@ -83,7 +83,12 @@ body{
     padding-top: 0;
     color: #474457;
 }
+.about-col h3{
+    padding-top: 10px;
+    color: #474457;
+}
 .about-col p{
+    line-height: 30px;
     padding: 15px 0 25px;
     color: #474457;
 }

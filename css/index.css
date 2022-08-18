@@ -47,16 +47,20 @@
     text-decoration: none;
     font-size: 30px;
 }
-.nav-links ul li a:hover{
-    color: #f44336 !important;
-    transition: 0.5s;
-}
 
 .color1{
     color: #ffe0f0;
 }
+.color1:hover{
+    color: #ff9dcf !important;
+    transition: 0.5s;
+}
 .color2{
     color: white;
+}
+.color2:hover{
+    color: #fff9a7 !important;
+    transition: 0.5s;
 }
 
 

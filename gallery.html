@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stella's Website</title>
+    <title>Gallery - Stellate</title>
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <script src="lightbox-plus-jquery.min.js"></script>
@@ -28,79 +28,33 @@
 </section>
 
 <div class="gallery">
-    <div id="myBtnContainer">
+    <div id="myBtnContainer"> 
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-        <button class="btn" onclick="filterSelection('people')"> People</button>
+        <!--添加或者删除分类：复制下面一行，并更改“avatar”和“Avatar”为其他分类-->
+        <button class="btn" onclick="filterSelection('avatar')"> Avatar</button>
+        <button class="btn" onclick="filterSelection('sketch')"> Sketch</button>
     </div>
     <div class="row">
-        <div class="column nature">
+        <!--添加或者删除图片：复制下面一段-->
+        <div class="column avatar"> <!--此为分类，可以改avatar为其他分类-->
             <div class="content">
-                <a href="images/about.jpg" data-lightbox="1" data-title="Mountains"><img src="images/about.jpg" alt="Mountains" style="width:100%"></a>
-                <h4>Mountains</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
-        <div class="column nature">
-            <div class="content">
-                <a href="images/background.jpg" data-lightbox="2"><img src="images/background.jpg" alt="Lights" style="width:100%"></a>
-                <h4>Lights</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
-        <div class="column nature">
-            <div class="content">
-                <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-                <h4>Forest</h4>
-                <p>Lorem ipsum dolor..</p>
+                <!--下面一行为图片，更改images/后面的图片文件名以及要在网站上显示的名字-->
+                <!--注：data-lightbox一栏后面的名字不得重复-->
+                <a href="images/Avatar1.PNG" data-lightbox="Avatar Example" data-title="Avatar Example"><img src="images/Avatar1.PNG" style="width:100%"></a>
+                <h4>Avatar Example</h4> <!--要在网站上显示的名字-->
+                <p>First avatar example</p> <!--图片描述或简介-->
             </div>
         </div>
         
-        <div class="column cars">
+        <div class="column sketch">
             <div class="content">
-                <a href="images/basketball.png" data-lightbox="3"><img src="images/basketball.png" alt="Car" style="width:100%"></a>
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
+                <a href="images/Sketch1.PNG" data-lightbox="Sketch Example" data-title="Sketch Example"><img src="images/Sketch1.PNG" style="width:100%"></a>
+                <h4>Sketch Example</h4>
+                <p>First sketch example</p>
+            </div>
+        </div>
 
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-</div>
+      </div>
 <script>    
     filterSelection("all") // Execute the function and show all columns
     function filterSelection(c) {
@@ -161,11 +115,9 @@
     <h4></h4>
     <p>Please do not reprint my work without my permission.</p>
     <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-    </div>
+      <a href = "https://twitter.com/Stellatedraw"><i class="fa fa-twitter"></i></a>
+      <a href = "https://www.instagram.com/stellatedraw"><i class="fa fa-instagram"></i></a>
+  </div>
     <p>Made by <i class="fa fa-heart-o"></i> Eva</p>
 </section>
 
